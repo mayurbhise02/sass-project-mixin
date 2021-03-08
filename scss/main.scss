@@ -1,0 +1,52 @@
+$heading-color : blue;
+$btn-color : #28a745;
+@mixin font-name{font-family: 'Shippori Mincho B1', serif;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{font-size: 15;
+
+}
+h1{
+    @include font-name;
+}
+
+h2{
+    color: $heading-color;
+    @include font-name;
+}
+p{
+    color: gray;
+}
+.btn-radius{
+    border-radius: 1.25rem;
+    background-color: $btn-color;
+
+}
+.header-banner-main{
+    background-image: linear-gradient(purple,blue);
+    height: 100vh;
+    color: white;
+}
+.nav-item{
+    .nav-link{
+        color: #ffc107 !important;
+        margin: 0 20px;
+    }
+}
+.nav-item{
+    .nav-link:hover{
+        font-weight: normal !important;
+    }
+}
+.logo-text{
+    line-height: 0;
+}
+.investor-main{
+    padding: 50px 0;
+}
+.form-control:focus{
+    box-shadow: 1px 1px 8px green !important;
+}
